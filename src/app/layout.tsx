@@ -31,33 +31,30 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <div className="grid grid-cols-1 md:grid-cols-[250px_1fr] h-screen bg-gray-600 ">
-        <div className="relative inline-block mb-6 p-6">
+        <div className="grid grid-cols-1 md:grid-cols-[250px_1fr] h-screen bg-blue-500  ">
+        <div className="relative inline-block mb-6 p-6 text-white">
               <SiBookstack className="absolute text-gray-300 text-6xl top-3 left-2 z-0 opacity-20" />
-              <h2 className="relative z-10 text-xl text-white font-semibold border-b border-gray-500 pb-2">
+              <h2 className="relative z-10 text-xl text-white font-semibold border-b border-blue-500 pb-2">
                 Book Manager
               </h2>
             
             <div className="mt-4">
-            <button
-            className="flex items-center space-x-3 px-4 py-3 rounded-md hover:bg-gray-500  transition focus:outline-none focus:ring-2 focus:ring-gray-400"
-            type="button"
-          >
-            <FaBookOpen/>
-            <Link href="/" className="text-md font-medium">All Books</Link>
-           
-          </button>
-      
-          <button
-            className="flex items-center space-x-3  px-4 py-3  mt-4 rounded-md hover:bg-gray-500  transition focus:outline-none focus:ring-2 focus:ring-gray-400"
-            type="button"
-          >
-         
-            <FaUserEdit/>
-            <Link href="/posts" className="text-md font-medium">Add New Book</Link>
-           
-            
-          </button>
+         <button
+  className="flex items-center space-x-3 px-4 py-3 rounded-md hover:bg-blue-600 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-blue-300"
+  type="button"
+>
+  <FaBookOpen />
+  <Link href="/" className="text-md font-medium text-white">All Books</Link>
+</button>
+
+<button
+  className="flex items-center space-x-3 px-4 py-3 mt-4 rounded-md hover:bg-blue-600 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-blue-300"
+  type="button"
+>
+  <FaUserEdit />
+  <Link href="/posts" className="text-md font-medium text-white">Add New Book</Link>
+</button>
+
             </div>
           
           </div>
